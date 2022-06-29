@@ -17,7 +17,7 @@ const fetchApi = async (url)=>{
 export default function Home({allNews}) {
   return (
    <Box>
-    <Flex flexWrap="wrap">
+    <Flex flexWrap="wrap" marginTop='10'>
         {allNews.articles.map((article)=> <Article article={article} key={article._id}/>)}
     </Flex>
    </Box>

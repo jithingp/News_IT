@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import {Flex,Box,Text} from '@chakra-ui/react'
-import defaultImage from '../assets/images/house.jpg'
+import defaultImage from '../assets/images/default.jpg'
 
 
 const Article = ({article : {link,media,title,summary}})=>{
