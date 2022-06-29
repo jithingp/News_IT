@@ -1,6 +1,4 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Flex,Box, Text, Button } from "@chakra-ui/react"
+import { Flex,Box } from "@chakra-ui/react"
 import axios from "axios"
 import Article from "../components/Article"
 
