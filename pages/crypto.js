@@ -18,7 +18,7 @@ export default function Crypto({allNews}) {
         <Text fontSize='2xl' p='4' fontWeight='bold' >
             Crypto
         </Text>
-        <Flex flexWrap="wrap" marginTop='3'>
+        <Flex flexWrap="wrap" marginTop='3' justifyContent='center'>
             {allNews.articles.map((article)=> <Article article={article} key={article._id}/>)}
         </Flex>
    </Box>
