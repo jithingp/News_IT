@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Menu,MenuButton,MenuList,MenuItem,IconButton,Flex,Box,Spacer } from '@chakra-ui/react'
 import {FcMenu} from 'react-icons/fc'
-import {MdEngineering} from 'react-icons/md'
+import {MdBusinessCenter} from 'react-icons/md'
 import {SiPicpay} from 'react-icons/si'
 import {GiNewspaper} from 'react-icons/gi'
 import {BsCurrencyBitcoin} from 'react-icons/bs'
@@ -14,7 +14,7 @@ const Desk =()=>(
             <Link href='/' paddingLeft='2'>General</Link>
         </Box>
         <Box fontSize='2xl' color='GrayText' fontWeight='normal' marginRight='8' fontStyle='oblique'>
-            <Link href='/technology' paddingLeft='2'>Technology</Link>
+            <Link href='/business' paddingLeft='2'>Business</Link>
         </Box>
         <Box fontSize='2xl' color='GrayText' fontWeight='normal' marginRight='8' fontStyle='oblique'>
             <Link href='/politics' paddingLeft='2'>Politics</Link>
@@ -36,8 +36,8 @@ const Mobile=()=>(
                     <Link href='/' passHref>
                         <MenuItem icon={<GiNewspaper/>}>General</MenuItem>
                     </Link>
-                    <Link href='/technology' passHref>
-                        <MenuItem icon={<MdEngineering/>}>Technology</MenuItem>
+                    <Link href='/business' passHref>
+                        <MenuItem icon={<MdBusinessCenter/>}>Business</MenuItem>
                     </Link>
                     <Link href='/politics' passHref>
                         <MenuItem icon={<SiPicpay/>}>Politics</MenuItem>

@@ -22,7 +22,7 @@ export default function Home({allNews}) {
   )
 }
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
   const allNews = await fetchApi('https://free-news.p.rapidapi.com/v1/search?q=general&lang=en');
   return {
     props: {

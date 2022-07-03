@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {Flex,Box,Text,Badge} from '@chakra-ui/react'
+import {Flex,Box,Image,Badge} from '@chakra-ui/react'
 import defaultImage from '../assets/images/default.jpg'
 
 
@@ -25,10 +25,10 @@ import defaultImage from '../assets/images/default.jpg'
 const Article = ({article : {link,media,title,summary,published_date,author}})=>{
     return (
     <Link href={link} passHref>
-        <Flex flexWrap="wrap" w="420px" p="5" paddingTop="0" justifyContent='flex-start' cursor='pointer' >
+        <Flex flexWrap="wrap" w="420px" p="5" paddingTop="0" justifyContent='flex-start' cursor='pointer' overflow='hidden' >
         <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
             <Box >
-                <img src={media} height='100%' width='100%' alt={defaultImage} />
+                <Image src={media} boxSize='300px' objectFit='cover' width='378px' alt={defaultImage} />
             </Box>
             <Box p='6'>
                     <Box display='flex' alignItems='baseline'>

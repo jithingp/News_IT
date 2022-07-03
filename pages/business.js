@@ -12,11 +12,11 @@ const fetchApi = async (url)=>{
   return data;
 }
 
-export default function Technology({allNews}) {
+export default function Business({allNews}) {
   return (
    <Box>
         <Text fontSize='2xl' p='4' fontWeight='bold' >
-            Technology
+            Business
         </Text>
         <Flex flexWrap="wrap" marginTop='3' justifyContent='center'>
             {allNews.articles.map((article)=> <Article article={article} key={article._id}/>)}
@@ -26,7 +26,7 @@ export default function Technology({allNews}) {
 }
 
 export async function getServerSideProps(){
-  const allNews = await fetchApi('https://free-news.p.rapidapi.com/v1/search?q=technology&lang=en');
+  const allNews = await fetchApi('https://free-news.p.rapidapi.com/v1/search?q=business&lang=en');
   return {
     props: {
       allNews
