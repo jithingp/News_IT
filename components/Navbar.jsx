@@ -10,21 +10,23 @@ import { useMediaQuery } from '@chakra-ui/react'
 
 const Desk =()=>(
     <>
-        <Box fontSize='2xl' color='GrayText' fontWeight='normal' marginRight='8'  fontStyle='oblique'>
-            <Link href='/' paddingLeft='2'>General</Link>
-        </Box>
-        <Box fontSize='2xl' color='GrayText' fontWeight='normal' marginRight='8' fontStyle='oblique'>
-            <Link href='/business' paddingLeft='2'>Business</Link>
-        </Box>
-        <Box fontSize='2xl' color='GrayText' fontWeight='normal' marginRight='8' fontStyle='oblique'>
-            <Link href='/politics' paddingLeft='2'>Politics</Link>
-        </Box>
-        <Box fontSize='2xl' color='GrayText' fontWeight='normal' marginRight='8' fontStyle='oblique'>
-            <Link href='/crypto' paddingLeft='2'>Crypto</Link>
-        </Box>
-        <Box fontSize='2xl' color='GrayText' fontWeight='normal' marginRight='8' fontStyle='oblique'>
-            <Link href='/sports' paddingLeft='2'>Sports</Link>
-        </Box>
+        <Flex marginTop='3' >
+            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+                <Link href='/' paddingLeft='2'>General</Link>
+            </Box>
+            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+                <Link href='/business' paddingLeft='2'>Business</Link>
+            </Box>
+            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+                <Link href='/politics' paddingLeft='2'>Politics</Link>
+            </Box>
+            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+                <Link href='/crypto' paddingLeft='2'>Crypto</Link>
+            </Box>
+            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+                <Link href='/sports' paddingLeft='2'>Sports</Link>
+            </Box>
+        </Flex> 
     </>
 )
 
