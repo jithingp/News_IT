@@ -15,7 +15,7 @@ const fetchApi = async (url)=>{
 export default function Politics({allNews}) {
   return (
    <Box>
-        <Text fontSize='2xl' p='4' fontWeight='bold' >
+        <Text fontSize='2xl' p='4' fontWeight='bold' marginLeft='4' fontFamily='mono'>
             Politics
         </Text>
         <Flex flexWrap="wrap" marginTop='3' justifyContent='center'>

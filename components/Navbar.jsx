@@ -11,19 +11,19 @@ import { useMediaQuery } from '@chakra-ui/react'
 const Desk =()=>(
     <>
         <Flex marginTop='3' >
-            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+            <Box fontSize='xl' color='gray.500' fontWeight='normal' marginRight='8' letterSpacing='wide'>
                 <Link href='/' paddingLeft='2'>General</Link>
             </Box>
-            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+            <Box fontSize='xl' color='gray.500' fontWeight='normal' marginRight='8' letterSpacing='wide'>
                 <Link href='/business' paddingLeft='2'>Business</Link>
             </Box>
-            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+            <Box fontSize='xl' color='gray.500' fontWeight='normal' marginRight='8' letterSpacing='wide'>
                 <Link href='/politics' paddingLeft='2'>Politics</Link>
             </Box>
-            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+            <Box fontSize='xl' color='gray.500' fontWeight='normal' marginRight='8' letterSpacing='wide'>
                 <Link href='/crypto' paddingLeft='2'>Crypto</Link>
             </Box>
-            <Box fontSize='xl' color='GrayText' fontWeight='normal' marginRight='8' >
+            <Box fontSize='xl' color='gray.500' fontWeight='normal' marginRight='8' letterSpacing='wide'>
                 <Link href='/sports' paddingLeft='2'>Sports</Link>
             </Box>
         </Flex> 
@@ -60,12 +60,12 @@ const Navbar = ()=>{
     
     return (
     <Flex p='2' borderBottom='1px' borderColor='gray.500'  >
-        <Box fontSize='3xl' fontWeight='bold' marginLeft='8' fontStyle='italic'>
+        <Box fontSize='3xl' fontWeight='bold' marginLeft='8' fontStyle='italic' fontFamily='cursive'>
             <Link href='/' paddingLeft='2'>NewsIT</Link>
         </Box>
         <Spacer/>
         {isLargerThan500?<Desk/>:<Mobile/>}
-
+       
     </Flex>
 )
             }
